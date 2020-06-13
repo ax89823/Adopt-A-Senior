@@ -13,6 +13,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
+	padding: 0;
 	
 }
 
@@ -45,7 +46,7 @@ nav {
 }
 
 /* Style the list inside the menu */
-nav ul {
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -70,7 +71,11 @@ nav a {
 	padding: 10px 15%;
 	display: block;
 }
-
+.body li {
+	display: block;
+	margin: 10px;
+	font-size: 16px;
+}
 form {
 	padding: 20px;
 	background-color: white;
@@ -98,6 +103,8 @@ button {
 	margin-top: 20px;
 }
 
+
+
 /* Clear floats after the columns */
 section:after {
 	content: "";
@@ -107,6 +114,8 @@ section:after {
 
 .body {
 	grid-area: 2 / 2 / 3/ 3;
+	padding: 20px;
+	margin: 0;
 }
 
 /* Style the footer */

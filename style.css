@@ -18,7 +18,7 @@ body {
 
 .grid {
 	display: grid;
-	grid-template: 20% 80% / 25% 75%;
+	grid-template: 20% 70% 10% / 25% 75%;
 	grid-gap: 0;
 	height: 100vh;
 	width: 100vw;
@@ -34,8 +34,6 @@ header {
 	margin: 0;
 	background-color: #FFD5EB;
 	grid-area: 1 / 1 / 2/ 3;
-	grid-column: 1/4;
-	grid-row: 1/2;
 	line-height: 100%;
 }
 
@@ -76,7 +74,6 @@ nav a {
 form {
 	padding: 20px;
 	background-color: white;
-	grid-area: 2 / 2 / 3/ 3;
 	overflow-y: scroll;
 }
 textarea {
@@ -114,6 +111,7 @@ footer {
 	padding: 10px;
 	text-align: center;
 	color: white;
+	grid-area: 3 / 1/ 4/ 3;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */

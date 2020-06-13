@@ -108,6 +108,10 @@ section:after {
 	clear: both;
 }
 
+.body {
+	grid-area: 2 / 2 / 3/ 3;
+}
+
 /* Style the footer */
 footer {
 	background-color: #777;

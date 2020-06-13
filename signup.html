@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Sign Up</title>
 <link href="WEB-INF/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<div class="grid">
@@ -34,12 +35,12 @@
 			</li>
 		</ul>
 	</nav>
-	<form class="body" action="action_page.php" method="post">
+	<form action="signup-confirmation.html" id="signup-form" >
 		<h3>Sign Up Form</h3>
 		<div class="form-box">
 			<label for="name">Name: </label>
 			<input type="text" name="name" required>
-			<label for="age">Password:</label>
+			<label for="age">Age:</label>
 			<input type="number" name="age" required>
 			<label for="email">Email:</label>
 			<input type="email" name="email" required>
@@ -47,36 +48,38 @@
 			<input type="tel" name="phone" required>
 			<p>Select your top 3 interests:</p>
 			<div class="interests">
-				<input type="checkbox" name="interest1" value="sports">
-				<label for="interest1">Sports</label>
-				<input type="checkbox" name="interest2" value="nature">
-				<label for="interest2">Nature</label>
-				<input type="checkbox" name="interest3" value="cooking">
-				<label for="interest3">Cooking</label>
-				<input type="checkbox" name="interest4" value="art">
-				<label for="interest4">Art</label>
-				<input type="checkbox" name="interest5" value="music">
-				<label for="interest5">Music</label>
+				<input type="checkbox" name="interests[]" value="sports">
+				<label for="interests[]">Sports</label>
+				<input type="checkbox" name="interests[]" value="nature">
+				<label for="interests[]">Nature</label>
+				<input type="checkbox" name="interests[]" value="cooking">
+				<label for="interests[]">Cooking</label>
+				<input type="checkbox" name="interests[]" value="art">
+				<label for="interests[]">Art</label>
+				<input type="checkbox" name="interests[]" value="music">
+				<label for="interests[]">Music</label>
 				<br>
-				<input type="checkbox" name="interest6" value="dance">
-				<label for="interest6">Dance</label>
-				<input type="checkbox" name="interest7" value="games">
-				<label for="interest7">Games</label>
-				<input type="checkbox" name="interest8" value="travel">
-				<label for="interest8">Travel</label>
-				<input type="checkbox" name="interest9" value="books">
-				<label for="interest9">Books</label>
-				<input type="checkbox" name="interest10" value="writing">
-				<label for="interest10">Writing</label>
+				<input type="checkbox" name="interests[]" value="dance">
+				<label for="interests[]">Dance</label>
+				<input type="checkbox" name="interests[]" value="games">
+				<label for="interests[]">Games</label>
+				<input type="checkbox" name="interests[]" value="travel">
+				<label for="interests[]">Travel</label>
+				<input type="checkbox" name="interests[]" value="books">
+				<label for="interests[]">Books</label>
+				<input type="checkbox" name="interests[]" value="writing">
+				<label for="interests[]">Writing</label>
 				<br>
 			</div>
 
 			<button type="submit">Submit</button>
-
+			
 		</div>
 
 	</form>
-		<footer><p>Footer</p></footer>
+	<footer>
+	</footer>
 	</div>
+	
 </body>
 </html>

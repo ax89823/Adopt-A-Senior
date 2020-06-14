@@ -1,7 +1,3 @@
-/**
- * 
- */
-
 var navhtml = '<ul>\
 	<li><a class="home" href="home.html">Home</a></li>\
 	<li><a class="signup" href="signup.html">Sign Up</a></li>\
@@ -25,4 +21,3 @@ function showContact() {
 	document.getElementById("contact").style.display = 'block';
 	document.getElementById("deliveries").style.display = 'none';
 }
-

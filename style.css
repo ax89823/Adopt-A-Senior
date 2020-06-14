@@ -3,7 +3,7 @@
 #B6D981 light green
 #ADDDFF: light blue
 #3E5C76: dark blue
-#3E5C76: gray blue
+#38536B: gray blue
 #32373B: dark grey
 #FFF187: pale yellow
 #F8BFA0: light coral
@@ -120,6 +120,7 @@ section:after {
 	margin: 0;
   overflow-y:scroll;
   font-size: 20px;
+  color: #38536B
 }
 
 /* Style the footer */

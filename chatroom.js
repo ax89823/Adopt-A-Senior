@@ -87,7 +87,7 @@ function getText() {
         var str = "Hello! Welcome to our symptom checker.Please answer yes or no to our questions.Are you expereincing trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or saty awake, Bluish lips or face?";
         //robot_prompt();
         if (chat_box.value == "yes") {
-                var str = "Please call 911 Immediately. These are warning signs for COVID-19.";
+                var str = "Please call your doctor immediately. These are warning signs for COVID-19.";
                 //robot_prompt();
         }
         if (chat_box.value == "no") {

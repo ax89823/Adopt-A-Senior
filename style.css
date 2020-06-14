@@ -276,3 +276,33 @@ footer {
 	z-index: 1;
 	background-color: rgb(255, 255, 255, 0.5);
 }
+
+#med-list div {
+	text-align: center;
+	display: grid;
+	grid-template: 1 fr 3fr 1fr / repeat(2, 1 fr);
+	grid-auto-flow: row;
+	width: 100%;
+	margin: auto;
+}
+
+h4.name {
+	grid-area: 1 / 1 / span 1/ span 2;
+	font-size: 20px;
+}
+#mydashboard h4 {
+	display: inline-block;
+}
+div.grocery-content {
+	padding: 20px;
+	margin: 5px 15px;
+}
+
+div.button-container {
+	grid-area: 1 / 1 / span 1/ span 2;
+}
+
+.button-container button {
+	margin: auto;
+	display: block;
+}

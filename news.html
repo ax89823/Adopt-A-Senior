@@ -5,34 +5,13 @@
 <title>News</title>
 <link href="style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body id = "news">
 <div class="grid">
 	<header>
 		<h2>Adopt A Senior</h2>
 	</header>
 
-	<nav>
-		<ul>
-			<li>
-				<a href="home.html">Home</a>
-			</li>
-
-			<li>
-				<a  href="signup.html">Sign Up</a>
-			</li>
-
-			<li>
-				<a href="resources.html">Resources</a>
-			</li>
-
-			<li>
-				<a class="active"  href="news.html">Good News</a>
-			</li>
-
-			<li>
-				<a href="feedback.html">Feedback</a>
-			</li>
-		</ul>
+	<nav class = "main">
 	</nav>
 		<div class="body">
 			<h2><b> Some good news to brighten your day! </b></h2>
@@ -74,14 +53,14 @@
       <form action="news-confirmation.html" id="news-form" >
       <form class="body" action="action_page.php" method="post">
         <h3>Submit Your Story</h3>
-        <h6>Please share with us some good news! It can be news stories or simply a little description of your new hobbies</h6>
+        <h4>Please share with us some good news! It can be news stories or simply a little description of your new hobbies</h4>
 
         <label for="name">Name (optional): </label>
         <input type="text" name="name">
         <label for="link">Website URL(news story): </label>
         <input type="text" link="link">
         <label for="input">Submission: </label>
-        <textarea name="news" rows="5" cols="33">Enter your stories here . . . </textarea>
+        <textarea name="news" rows="5" cols="33" placeholder ="Enter your comments/suggestions"></textarea>
         <button type="submit">Submit</button>
 
 
@@ -93,5 +72,6 @@
     <p>We are all in this together </p>
 	</footer>
 	</div>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

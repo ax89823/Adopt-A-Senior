@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 var navhtml = '<ul>\
 	<li><a class="home" href="home.html">Home</a></li>\
@@ -26,10 +26,5 @@ function showContact() {
 }
 
 function addItem() {
-	
+
 }
-
-
-
-
-

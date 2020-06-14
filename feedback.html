@@ -1,55 +1,36 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Feedback</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="WEB-INF/style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-<div class="grid">
-  <header>
-    <h2>Adopt A Senior</h2>
-  </header>
+<body id="feedback">
+	<div class="grid">
+		<header>
+			<h2>Adopt A Senior</h2>
+		</header>
 
-  <nav>
-    <ul>
-      <li>
-        <a href="home.html">Home</a>
-      </li>
+		<nav class="main">
+			
+		</nav>
+		<form action="feedback-confirmation.html"class="body" id="feedback-form">
+			<h3>Feedback Form</h3>
 
-      <li>
-        <a href="signup.html">Sign Up</a>
-      </li>
-
-      <li>
-        <a href="resources.html">Resources</a>
-      </li>
-
-      <li>
-        <a href="news.html">Good News</a>
-      </li>
-
-      <li>
-        <a class="active" href="feedback.html">Feedback</a>
-      </li>
-    </ul>
-  </nav>
-  <form action="feedback-confirmation.html" id="feedback-form" >
-  <form class="body" action="action_page.php" method="post">
-    <h3>Feedback Form</h3>
-
-    <label for="name">Name (optional): </label>
-    <input type="text" name="name">
-    <label for="feedback">Feedback: </label>
-    <textarea name="feedback" rows="5" cols="33">Enter your comments/suggestions here . . . </textarea>
-    <button type="submit">Submit</button>
+			<label for="name">Name (optional): </label>
+			<input type="text" name="name">
+			<br>
+			<label for="feedback">Feedback: </label>
+			<textarea name="feedback" rows="5" cols="33" placeholder ="Enter your comments/suggestions"></textarea>
+			<button type="submit" >Submit</button>
 
 
-  </form>
-  <footer>
-    <p>We are all in this together </p>
-  </footer
-</div>
+		</form>
+		
+	</div>
+	<footer>
+	<p>Footer</p>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

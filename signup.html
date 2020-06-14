@@ -3,83 +3,64 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sign Up</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="WEB-INF/style.css" type="text/css" rel="stylesheet">
+
 </head>
-<body>
-<div class="grid">
-	<header>
-		<h2>Adopt A Senior</h2>
-	</header>
+<body id="signup">
+	<div class="grid">
+		<header>
+			<h2>Adopt A Senior</h2>
+		</header>
 
-	<nav>
-		<ul>
-			<li>
-				<a href="home.html">Home</a>
-			</li>
-
-			<li>
-				<a class="active" href="signup.html">Sign Up</a>
-			</li>
-
-			<li>
-				<a href="resources.html">Resources</a>
-			</li>
-
-			<li>
-				<a href="news.html">Good News</a>
-			</li>
-
-			<li>
-				<a href="feedback.html">Feedback</a>
-			</li>
-		</ul>
-	</nav>
-	<form action="signup-confirmation.html" id="signup-form" >
-		<h3>Sign Up Form</h3>
-		<div class="form-box">
-			<label for="name">Name: </label>
-			<input type="text" name="name" required>
-			<label for="age">Age:</label>
-			<input type="number" name="age" required>
-			<label for="email">Email:</label>
-			<input type="email" name="email" required>
-			<label for="phone">Cell Phone: </label>
-			<input type="tel" name="phone" required>
-			<p>Select your top 3 interests:</p>
-			<div class="interests">
-				<input type="checkbox" name="interests[]" value="sports">
-				<label for="interests[]">Sports</label>
-				<input type="checkbox" name="interests[]" value="nature">
-				<label for="interests[]">Nature</label>
-				<input type="checkbox" name="interests[]" value="cooking">
-				<label for="interests[]">Cooking</label>
-				<input type="checkbox" name="interests[]" value="art">
-				<label for="interests[]">Art</label>
-				<input type="checkbox" name="interests[]" value="music">
-				<label for="interests[]">Music</label>
+		<nav class="main">
+		</nav>
+		<form class="body" action="signup-confirmation.html" id="signup-form">
+			<h3>Sign Up Form</h3>
+				<label for="name">Name: </label>
+				<input type="text" name="name" required>
+				<label for="age">Age:</label>
+				<input type="number" name="age" required>
+				<label for="email">Email:</label>
+				<input type="email" name="email" required>
 				<br>
-				<input type="checkbox" name="interests[]" value="dance">
-				<label for="interests[]">Dance</label>
-				<input type="checkbox" name="interests[]" value="games">
-				<label for="interests[]">Games</label>
-				<input type="checkbox" name="interests[]" value="travel">
-				<label for="interests[]">Travel</label>
-				<input type="checkbox" name="interests[]" value="books">
-				<label for="interests[]">Books</label>
-				<input type="checkbox" name="interests[]" value="writing">
-				<label for="interests[]">Writing</label>
-				<br>
+				<label for="phone">Cell Phone: </label>
+				<input type="tel" name="phone" required>
+				<label for="city">City: </label>
+				<input type="text" name="city" required>
+				<label for="state">State: </label>
+				<input type="text" name="state" required>
+				<p>Select your top 3 interests:</p>
+				<div class="interests">
+					<input type="checkbox" name="interests[]" value="sports">
+					<label for="interests[]">Sports</label>
+					<input type="checkbox" name="interests[]" value="nature">
+					<label for="interests[]">Nature</label>
+					<input type="checkbox" name="interests[]" value="cooking">
+					<label for="interests[]">Cooking</label>
+					<input type="checkbox" name="interests[]" value="art">
+					<label for="interests[]">Art</label>
+					<input type="checkbox" name="interests[]" value="music">
+					<label for="interests[]">Music</label>
+					<br>
+					<input type="checkbox" name="interests[]" value="dance">
+					<label for="interests[]">Dance</label>
+					<input type="checkbox" name="interests[]" value="games">
+					<label for="interests[]">Games</label>
+					<input type="checkbox" name="interests[]" value="travel">
+					<label for="interests[]">Travel</label>
+					<input type="checkbox" name="interests[]" value="books">
+					<label for="interests[]">Books</label>
+					<input type="checkbox" name="interests[]" value="writing">
+					<label for="interests[]">Writing</label>
+					<br>
+
+				<button type="submit">Submit</button>
+
 			</div>
 
-			<button type="submit">Submit</button>
-
-		</div>
-
-	</form>
-	<footer>
-    <p>We are all in this together </p>
-	</footer>
+		</form>
+		<footer> </footer>
 	</div>
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

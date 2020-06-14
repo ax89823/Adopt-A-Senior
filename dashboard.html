@@ -3,80 +3,109 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Dashboard</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="WEB-INF/style.css" type="text/css" rel="stylesheet">
 </head>
 <body id="mydashboard">
 	<div class="grid">
 		<header>
 			<h2>Adopt A Senior</h2>
 		</header>
-		<nav class="main">
-
-		</nav>
+		<nav class="main"></nav>
 		<div class="body">
 			<h3>My Dashboard</h3>
 			<nav class="dashboard">
 				<ul>
 					<li>
-						<button onclick="showDeliveries()">
-						Deliveries
-						</button>
+						<button onclick="showDeliveries()">Deliveries</button>
 					</li>
 					<li>
-						<button onclick="showContact()">
-						Contact
-						</button>
+						<button onclick="showContact()">Contact</button>
 					</li>
 				</ul>
 			</nav>
 			<div id="deliveries">
 				<div class="prescriptions">
-					<ul>
+					<ul id="med-list">
 						<li>
 							<div>
 								<h4>Tylenol</h4>
-								<h4>Frequency: </h4>
+								<h4>Frequency:</h4>
 								<p>3 times a week</p>
-								<h4>Next refill: </h4>
+								<h4>Next refill:</h4>
 								<p>June 27, 2020</p>
 							</div>
 						</li>
 						<li>
 							<div>
 								<h4>Lasix</h4>
-								<h4>Frequency: </h4>
+								<h4>Frequency:</h4>
 								<p>Once a day</p>
-								<h4>Next refill: </h4>
+								<h4>Next refill:</h4>
 								<p>July 14, 2020</p>
 							</div>
 						</li>
 					</ul>
+					<button type="button" onclick="openMedModal()">Add
+						Item</button>
 				</div>
 				<div class="groceries">
-					<h4>Next Delivery: </h4>
+					<h4>Next Delivery:</h4>
 					<p>June 21, 2020</p>
-					<h5>What I need: </h5>
-					<ul>
-					<li>Bananas</li>
-					<li>Chicken</li>
-					<li>Lettuce</li>
-					<li>Bread</li>
+					<h5>What I need:</h5>
+					<ul id="grocery-list">
+						<li>Bananas</li>
+						<li>Chicken</li>
+						<li>Lettuce</li>
+						<li>Bread</li>
 					</ul>
-					<button type="button" onclick="addItem()">Add Item</button>
+					<button type="button" onclick="openGroceryModal()">Add
+						Item</button>
+
+				</div>
+				
+				<div  id="addMeds" class="modal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()">&times;</span>
+						<label for="prescription">Prescription Name:</label>
+						<input type="text" name="prescription" required>
+						<label for="frequency">Dose Frequency (per week):</label>
+						<input type="number" name="frequency" required>
+						<label for="amount">Number of pills per refill:</label>
+						<input type="number" name="amount" required>
+						<button type="button" onclick="addMedItem()">Add</button>
+					</div>
+				</div>
+				
+				<div id="addGroceries" class="modal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()">&times;</span>
+						<label>Choose item to add:</label>
+						<select id="groceryItem">
+							<option value="milk">Milk</option>
+							<option value="eggs">Eggs</option>
+							<option value="flour">Flour</option>
+							<option value="salmon">Salmon</option>
+							<option value="rice">Rice</option>
+						</select>
+						<button type="button" onclick="addGroceryItem()">Add</button>
+					</div>
 				</div>
 			</div>
 			<div id="contact">
-			<h3>Your Friend: </h3>
-			<p>Gaby Tran</p>
-			<h3>Email: </h3>
-			<p>care@gmail.com</p>
-			<h3>Phone: </h3>
-			<p>(123) 456-7890 </p>
+				<h3>Your Caregiver:</h3>
+				<p>Gaby Tran</p>
+				<h3>Email:</h3>
+				<p>care@gmail.com</p>
+				<h3>Phone:</h3>
+				<p>(123) 456-7890</p>
+			</div>
+			
+			<div id="overlay">
 			</div>
 		</div>
-	<footer>
-  <p>We are all in this together </p>
- </footer>
+		<footer>
+	<p>Footer</p>
+	</footer>
 	</div>
 	<script type="text/javascript" src="dashboard.js"></script>
 </body>

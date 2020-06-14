@@ -1,5 +1,5 @@
 /**
- *
+ * 
  */
 var navhtml = '<ul>\
 	<li><a class="home" href="home.html">Home</a></li>\
@@ -13,18 +13,10 @@ var navhtml = '<ul>\
 var nav = document.getElementsByClassName("main");
 nav[0].innerHTML = navhtml;
 
-function showDeliveries() {
-	var deliveries = document.getElementById("deliveries");
-	deliveries.style.display = 'grid';
-	deliveries.style.gridTemplateColumns = 'repeat(2, 1fr)';
-	document.getElementById("contact").style.display = 'none';
-}
 
-function showContact() {
-	document.getElementById("contact").style.display = 'block';
-	document.getElementById("deliveries").style.display = 'none';
-}
 
-function addItem() {
 
-}
+
+
+
+

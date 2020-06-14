@@ -101,8 +101,11 @@ label {
 	display: inline-block;
 }
 
-input {
+.body input {
 	display: inline-block;
+	padding: 2px;
+	border: none;
+	border-bottom: 1px solid black;
 }
 
 .interests label {
@@ -130,27 +133,11 @@ section:after {
 	margin: 0;
   overflow-y:scroll;
   font-size: 20px;
-  color: #38536B
+  color: #38536B;
 }
-
-/* Style the footer */
-footer {
-	background-color: #F8BFA0;
-	padding: 5px;
-	text-align: center;
-	color: white;
-	grid-area: 3 / 1/ 4/ 3;
-  font-size:20px;
+form.body{
+	align-content: center;
 }
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media ( max-width : 600px) {
-	nav, article {
-		width: 100%;
-		height: auto;
-	}
-}
-
 
 #resources {
 	display: grid;
@@ -216,5 +203,25 @@ nav.dashboard button:focus {
 #contact {
 	display: none;
 }
+/* Style the footer */
+footer {
+	background-color: #F8BFA0;
+	padding: 5px;
+	text-align: center;
+	color: white;
+	grid-area: 3 / 1/ 4/ 3;
+  font-size:20px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media ( max-width : 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
 
 

@@ -59,7 +59,7 @@ ul {
 }
 
 /* Change color when you hover over link in nav */
-nav li:hover {
+nav.main li:hover {
 	background-color: #1A1B41;
 }
 
@@ -75,7 +75,7 @@ nav a {
 	padding: 10px 15%;
 	display: block;
 }
-.body li {
+li.body {
 	display: block;
 	margin: 10px;
 	font-size: 16px;
@@ -98,7 +98,7 @@ input {
 	display: inline-block;
 }
 
-.interests label {
+label.interests {
 	display: inline-block;
 	width: 50px;
 	margin: 5px 30px;
@@ -143,3 +143,71 @@ footer {
 		height: auto;
 	}
 }
+
+
+#resources {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: row;
+}
+.header {
+	grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.item {
+	background-color:#FFF187;
+	padding: 10px;
+	max-height: 300px;
+	margin: 10px;
+	color: #3E5C76;
+	
+}
+
+.login {
+	margin: auto;
+	/*background-color: #ADDDFF;*/
+}
+
+
+
+label.login {
+	padding: 2px;
+}
+
+nav.dashboard li  {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+*/
+nav.dashboard li:hover {
+	background-color:  #ADDDFF;
+}
+.dashboard {
+	background-color: white;
+}
+nav.dashboard button {
+	background-color: white;
+	border: none;
+	margin: 0px;
+	color: #32373B;
+	padding: 5px 10px;
+	border-bottom: 2px solid #32373B;
+}
+nav.dashboard button:hover {
+	background-color:  #ADDDFF;
+}
+nav.dashboard button:focus {
+	background-color: #ADDDFF;
+}
+
+#deliveries {
+	display: none;
+	
+}
+
+#contact {
+	display: none;
+}
+
+

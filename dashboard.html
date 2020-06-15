@@ -25,30 +25,46 @@
 			</nav>
 			<div id="deliveries">
 				<div class="prescriptions">
+				<h3>My Prescriptions</h3>
 					<ul id="med-list">
 						<li>
 							<div>
-								<h4>Tylenol</h4>
+								
+								<h4 class="name">Tylenol</h4>
+								<div>
 								<h4>Frequency:</h4>
-								<p>3 times a week</p>
+								<p> 3 per week</p>
+								</div>
+								<div>
 								<h4>Next refill:</h4>
-								<p>June 27, 2020</p>
+								<p>August 20, 2020</p>
+								</div>
 							</div>
 						</li>
 						<li>
 							<div>
-								<h4>Lasix</h4>
+								<h4 class="name">Lasix</h4>
+								<div>
 								<h4>Frequency:</h4>
-								<p>Once a day</p>
+								<p>1 per week</p>
+								</div>
+								<div>
 								<h4>Next refill:</h4>
 								<p>July 14, 2020</p>
+								</div>
+								
 							</div>
 						</li>
 					</ul>
+					<div class="button-container">
 					<button type="button" onclick="openMedModal()">Add
 						Item</button>
+						</div>
 				</div>
+				
 				<div class="groceries">
+				<h3>My Groceries</h3>
+				<div class = "grocery-content">
 					<h4>Next Delivery:</h4>
 					<p>June 21, 2020</p>
 					<h5>What I need:</h5>
@@ -60,7 +76,7 @@
 					</ul>
 					<button type="button" onclick="openGroceryModal()">Add
 						Item</button>
-
+</div>
 				</div>
 				
 				<div  id="addMeds" class="modal">

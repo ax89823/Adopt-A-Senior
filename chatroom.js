@@ -1,14 +1,16 @@
 var is_start = true;
+var finished = false;
 var counter = 0;
+var totalpoint = 0;
 
-function getText() {
+function getText() { 
 	var chat_box = document.getElementById("chat_box");
 	var messages = document.getElementById("messages");
 	var robot = document.createElement("li");
 	var newMessage = document.createElement("li");
-
+	
 	console.log(is_start);
-	console.log(counter);
+	console.log ("totalpoint:" + totalpoint + " counter: " + counter);
 	if (is_start && counter == 0) {
 		var str = "Hello! Welcome to our symptom checker. Please answer yes or no to our questions and hit the SEND button. Are you experiencing trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or saty awake, bluish lips or face?";
 		robot.innerHTML = str;
@@ -27,12 +29,10 @@ function getText() {
 	chat_box.value = "";
 	if (val == "yes" && counter == 1) {
 		var r1 = document.createElement("li");
-		var str = "Please call 911 immediately. These are warning signs for COVID-19.";
-		r1.innerHTML = str;
-		messages.appendChild(r1);
-		chat_box.value = "";
-		// counter += 1;
-		return;
+		alert("Please call 911 immediately. These are warning signs for COVID-19.");
+		finished = true;
+		
+		
 	}
 	newMessage.innerHTML = val;
 	messages.appendChild(newMessage);
@@ -50,7 +50,6 @@ function getText() {
 			return;
 		}
 		if (val = "no" && counter == 1) {
-			totalpoint += 0;
 			counter += 1;
 			return;
 		}
@@ -87,11 +86,10 @@ function getText() {
 		// messages.appendChild(newMessage)
 		if (val == "yes") {
 			totalpoint += 1;
-			counter += 1;
+			counter += 1
 			return;
 		}
 		if (val == "no") {
-			var totalpoint = totalpoint + 0;
 			counter += 1;
 			return;
 		}
@@ -134,7 +132,6 @@ function getText() {
 			return;
 		}
 		if (val = "no") {
-			var totalpoint = totalpoint + 0;
 			counter += 1;
 			return;
 		}
@@ -156,7 +153,6 @@ function getText() {
 			return;
 		}
 		if (val = "no") {
-			var totalpoint = totalpoint + 0;
 			counter += 1;
 			return;
 		}
@@ -178,7 +174,6 @@ function getText() {
 			return;
 		}
 		if (val = "no") {
-			var totalpoint = totalpoint + 0;
 			counter += 1;
 			return;
 		}
@@ -200,7 +195,6 @@ function getText() {
 			return;
 		}
 		if (val = "no") {
-			var totalpoint = totalpoint + 0;
 			counter += 1;
 			return;
 		}
@@ -210,7 +204,7 @@ function getText() {
 	messages.appendChild(newMessage);
 	chat_box.value = "";
 	if (counter == 9) {
-		var str = "Are you experiencing Nausea?";
+		var str = "Are you experiencing nausea?";
 		robot.innerHTML = str;
 		messages.appendChild(robot);
 		chat_box.value = "";
@@ -229,7 +223,7 @@ function getText() {
 	messages.appendChild(newMessage);
 	chat_box.value = "";
 	if (counter == 10) {
-		var str = "Are you experiencing Diarrhea?";
+		var str = "Are you experiencing diarrhea?";
 		robot.innerHTML = str;
 		messages.appendChild(robot);
 		chat_box.value = "";
@@ -238,6 +232,7 @@ function getText() {
 		if (val == "yes") {
 			totalpoint += 1;
 			counter += 1;
+			return;
 		}
 		if (val == "no") {
 			counter += 1;
@@ -247,12 +242,17 @@ function getText() {
 	if (totalpoint < 6 && counter == 11) {
 		console.log("in");
 		alert(" Symptoms show that you may be experiencing a high fever but it may not be COVID-19. Please check with your doctor to make sure.");
-		return;
+		finished = true;
 	}
 	if (totalpoint >= 6 && counter == 11) {
+		
 		console.log("in");
 		alert("Symptoms show that you may have COVID-19. Please make sure with your doctor or call 911 right away.");
+		finished = true;
 	}
-	console.log("out");
+	if (finished) {
+		document.getElementById("symptom-checker").style.display = 'none';
+		document.getElementById("thank-you").style.display = 'block';
+	}
 }
 

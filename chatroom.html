@@ -2,32 +2,48 @@
 <html>
 <head>
 
-<meta name= "viewport" content= "width=device-width, initial-scale=1">
-<link href="style.css" rel= stylesheet type=text/css >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="WEB-INF/style.css" rel=stylesheet type=text/css>
 <script src="chatroom.js"></script>
 </head>
 
 <body>
-        <section class="container">
-                <h2> Symptom Checker </h2>
-                <h3> To start the symptom checker please hit send. </h3>
-                <!-- <button class="open-button" onclick="openform()">chat</button> -->
+	<div class="grid">
+		<header>
+			<h2>Adopt A Senior</h2>
+		</header>
+
+		<nav class="main"></nav>
+		<div class="body">
+			<div id="symptom-checker">
+				<h2>Symptom Checker</h2>
+				<h3>To start the symptom checker please hit send.</h3>
+				<!-- <button class="open-button" onclick="openform()">chat</button> -->
 
 
-                <div class="chat-popup">
-                <form action="" class="form-container">
-                        <h1> Chat </h1>
-                        <label for="msg">Message</label>
-                        <div class = "chat_area">
-                                <ul class = "messages" id="messages"></ul>
-                        </div>
-                        <textarea id = "chat_box" placeholder="Type Message here..." name="msg"
-                        required> </textarea>
-                        <!-- <button onclick="getText()" type="submit" class="btn" > start checker </button> -->
-                        <button onclick="getText()" type="submit" class="btn"> send </button>
-                        <!-- <button type="button" class="btn cancel" onclick=" "> go home</button> -->
+				<div class="chat-popup">
+					<form action="" class="form-container">
+						<h1>Chat</h1>
+						<label for="msg">Message</label>
+						<div class="chat_area">
+							<ul class="messages" id="messages"></ul>
+						</div>
+						<textarea id="chat_box" placeholder="Type Message here..."
+							name="msg" required> </textarea>
+						<!-- <button onclick="getText()" type="submit" class="btn" > start checker </button> -->
+						<button id="send" onclick="getText()" type="submit" class="btn">
+							send</button>
+						<!-- <button type="button" class="btn cancel" onclick=" "> go home</button> -->
 
-</form>
-</div>
-</section>
+
+					</form>
+				</div>
+			</div>
+			<div id="thank-you">
+				<h2>Thank you for using our symptom checker!</h2>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
 </html>

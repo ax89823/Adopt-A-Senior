@@ -74,6 +74,11 @@ function addMedItem() {
 	/*Add to body*/
 	document.getElementById("med-list").appendChild(med);
 	
+	/*Clear fields*/
+	for (var i = 0; i < inputList.length; i++) {
+		inputList[i].value = "";
+	}
+	
 	/*Close pop-up*/
 	closeModal();
 }

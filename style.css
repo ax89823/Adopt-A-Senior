@@ -61,7 +61,7 @@ nav.main li:hover {
 	background-color: #1A1B41;
 }
 
-#home .home, #news .news, #resources .resources, #login .login, #signup .signup, #mydashboard .mydashboard, #feedback .feedback {
+#home .home, #news .news, #resources .resources, #login .login, #signup .signup, #mydashboard .mydashboard, #feedback .feedback, #chatroom .chatroom {
 	background-color: #1A1B41;
 }
 
@@ -237,7 +237,7 @@ footer {
   top: 50vh;
   left: 50vw;
   z-index: 2; /* Sit on top */
-  width: 400px; 
+  width: 400px;
   height: 250px;
   margin: -125px -200px;
 }
@@ -305,4 +305,12 @@ div.button-container {
 .button-container button {
 	margin: auto;
 	display: block;
+}
+
+.messages {
+  list-style-type: none;
+}
+
+#thank-you {
+  display: none;
 }

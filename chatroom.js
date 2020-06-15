@@ -3,12 +3,12 @@ var finished = false;
 var counter = 0;
 var totalpoint = 0;
 
-function getText() { 
+function getText() {
 	var chat_box = document.getElementById("chat_box");
 	var messages = document.getElementById("messages");
 	var robot = document.createElement("li");
 	var newMessage = document.createElement("li");
-	
+
 	console.log(is_start);
 	console.log ("totalpoint:" + totalpoint + " counter: " + counter);
 	if (is_start && counter == 0) {
@@ -31,8 +31,8 @@ function getText() {
 		var r1 = document.createElement("li");
 		alert("Please call 911 immediately. These are warning signs for COVID-19.");
 		finished = true;
-		
-		
+
+
 	}
 	newMessage.innerHTML = val;
 	messages.appendChild(newMessage);
@@ -245,7 +245,7 @@ function getText() {
 		finished = true;
 	}
 	if (totalpoint >= 6 && counter == 11) {
-		
+
 		console.log("in");
 		alert("Symptoms show that you may have COVID-19. Please make sure with your doctor or call 911 right away.");
 		finished = true;
@@ -255,4 +255,3 @@ function getText() {
 		document.getElementById("thank-you").style.display = 'block';
 	}
 }
-
